@@ -1,9 +1,9 @@
 # Get Lambda Instances
 
-Use GitHub Actions to get the lambda cloud instances you want. Forked from https://github.com/hamelsmu/get-lambda/
+Use GitHub Actions to get the lambda cloud instances you want. Forked from https://github.com/hamelsmu/get-lambda/. Refer API usage at https://github.com/nateraw/lambdacloud and https://cloud.lambdalabs.com/api/v1/docs.
 
 
-## Usage
+## Action Usage
 
 1. Setup a new [ssh key in lambda](https://cloud.lambdalabs.com/ssh-keys) named `lambda-sshkey`.  And save the private key locally. You will need the private key to ssh into the instance after it is created.
 
@@ -23,3 +23,5 @@ Use GitHub Actions to get the lambda cloud instances you want. Forked from https
 3. create instance: `python cli.py create_instance` to enter interactive selection or directly pass ssh-key-name and instance types via `python cli.py create_instance <instance_type> <ssh_key_name>`.
 
 4. delete instance: `python cli.py delete_instance <instance_id>`
+
+
