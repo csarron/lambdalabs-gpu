@@ -11,5 +11,7 @@ jobs:
       uses: actions/checkout@v2
 
     - name: See types
+      env:
+        LAMBDA_CLOUD_TOKEN: ${{ secrets.LAMBDA_CLOUD_TOKEN }}
       run: |
         ./list_types.sh
